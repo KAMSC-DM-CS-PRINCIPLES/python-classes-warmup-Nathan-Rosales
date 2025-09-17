@@ -1,10 +1,7 @@
 # TODO create class BankAccount
 
-if __name__ == "__main__":
-    # create BankAccount below this
-
-    class BankAccount:
-        def __init__(self,balance):
+class BankAccount:
+        def __init__(self,balance=0):
             self.balance = balance
 
         def deposit(self,dep):
@@ -21,3 +18,8 @@ if __name__ == "__main__":
             
         def get_balance(self):
             return self.balance
+
+if __name__ == "__main__":
+    # create BankAccount below this
+    bank123 = BankAccount(200)
+    print(bank123.get_balance())
