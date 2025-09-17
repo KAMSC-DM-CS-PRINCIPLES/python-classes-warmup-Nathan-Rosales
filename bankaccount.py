@@ -10,7 +10,7 @@ class BankAccount:
             return self.balance
         
         def withdraw(self,draw):
-            if draw > 0:
+            if self.balance > 0:
                 self.balance -= draw
                 return self.balance
             else:
@@ -21,5 +21,5 @@ class BankAccount:
 
 if __name__ == "__main__":
     # create BankAccount below this
-    bank123 = BankAccount(200)
-    print(bank123.get_balance())
+    bank123 = BankAccount(0)
+    print(bank123.withdraw(100))
