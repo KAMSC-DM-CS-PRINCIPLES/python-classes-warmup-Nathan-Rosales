@@ -10,7 +10,7 @@ class BankAccount:
             return self.balance
         
         def withdraw(self,draw):
-            if self.balance > 0:
+            if self.balance-draw > 0:
                 self.balance -= draw
                 return self.balance
             else:
