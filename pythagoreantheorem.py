@@ -8,7 +8,7 @@ class PythagoreanTheorem:
         self.b = b
 
     def hypotenuse(self):
-        return math.sqrt(a**2 + b**2)
+        return math.sqrt(self.a**2 + self.b**2)
 
 if __name__ == "__main__":
     # create PythagoreanTheorem below this
