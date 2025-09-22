@@ -1,5 +1,7 @@
 # TODO create class PythagoreanTheorem
 
+import math
+
 class PythagoreanTheorem:
     def __init__(self, a, b):
         self.a = a
